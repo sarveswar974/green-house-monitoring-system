@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greenhouse Monitoring - Combined Logging</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌿 Greenhouse Monitoring System 📊</h1>
+
+    <div class="cards-container">
+        <div class="card">
+            Temperature 🌡️<br>
+            <span id="temp">0</span> °C
+        </div>
+        <div class="card">
+            Humidity 💧<br>
+            <span id="hum">0</span> %
+        </div>
+        <div class="card">
+            Light ☀️<br>
+            <span id="light">0</span> lx
+        </div>
+    </div>
+
+    <div class="download-section">
+        <button id="downloadBtn">📥 Download Combined Data Sheet (CSV)</button>
+    </div>
+    <div class="log-info" id="logCount">📋 0 records stored</div>
+
+    <div class="footer-note">
+        ⏱️ Every 60 seconds a snapshot of all sensors is saved. Click the button to export.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
